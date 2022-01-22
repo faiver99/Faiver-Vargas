@@ -1,0 +1,78 @@
+.jumbotron{
+    background-color: blue;
+    color: white;
+    height: 60px;
+    text-align: center;
+    margin-top: 55px;
+
+    
+}
+
+footer{
+    padding: 20px;
+    background-color: blue;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: white;
+    
+}
+
+.card-play{
+    flex: 1 250px ;
+    padding: 10p 0px 10px 0px;
+    margin: 3px;
+}
+
+
+.prp{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+    
+}
+
+.btn-reserva{
+    width: 100%;
+    border-radius: 0px;
+    
+}
+
+.conten{
+    padding-left: 60px;
+}
+
+.conten0{
+    padding-left: 80px;
+}
+
+.conten1{
+    padding-right: 60px;
+}
+
+.breadcrumb{
+    margin-top: 20px;
+    background: rgb(211, 187, 187);
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+}
+
+.footer-address-icon{
+    padding-right: 10px;
+
+}
+
+.button-pay{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.tm{
+    font-size: 20px;
+    
+}
