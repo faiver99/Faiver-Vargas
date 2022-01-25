@@ -1,1 +1,1 @@
-## hola este sitio esta creado para posterar avances del curso master en desarrollo web.
+**este sitio esta creado para postear avances del master en desarrollo web.

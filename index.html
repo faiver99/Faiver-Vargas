@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="/open-iconic/font/css/open-iconic.css" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="./node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> -->
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <title>BUMMLOZ</title>
@@ -50,22 +51,37 @@
               </ol>
 
           </nav>
+          <div class="row">
+              <div class="col-sm-4">
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#juega" aria-expanded="false" aria-controls="multiCollapse1">¿Como se juega? </button>
+
+              </div>
+              <div class="col-sm-4">
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#comprar" aria-expanded="false" aria-controls="multiCollapse2">¿Como puedo comprar?</button>
+
+              </div>
+              <div class="col-sm-4">
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Matodos de pago?</button>
+
+               </div>
+
+          </div>
           <div class="d-flex flex-wrap">
-                <div class="col-sm-4">
+                <div class="col-sm-4 collapse multi-collepse" id="juega">
                     <p>
                        <h3>¿Como se juega?</h3>
                        <p>Busca juegos de acuerdo a tus gustos personales.</p>
                     </p>
 
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 collapse multi-collepse" id="comprar">
                     <p>
                       <h3>¿Como puedo comprar?</h3>
                       <p>Puedes comprar cualquier titulo dede la seccion de tienda .</p>
                     </p>
  
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 collapse multi-collepse " id="pago">
                     <p>
                       <h3>¿Matodos de pago?</h3>
                       <p>Puede realizar pagos con tarjeta de credito y en efectivo en nuestros puntos aliados.</p>
@@ -75,14 +91,36 @@
           </div>
           <hr class="my-4">
           
-          <img class="img-fluid" src="./imagenes/video-game-g8ad80884e_1280.png" alt="responsive image">
+          <!-- <img class="img-fluid" src="./imagenes/video-game-g8ad80884e_1280.png" alt="responsive image"> -->
+
+          <div id="carouselControl" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/call of heroes.jfif" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/counter.jfif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/cyberpunk.jfif" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControl" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControl" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
            <div class="d-flex flex-wrap">
                 <div class="card card-play d-flex flex-column justify-content-between m-10px">   
                     <img class="colozo img-fluid card-img-top" src="./imagenes/fortnite.jfif" alt="fortnite">            
                     
                    <div class="card-body">
-                     <h3 class="card-title">Fortnite</h3>
+                     <h3 class="card-title" data-bs-toggle="tooltip" data-placement="top" title="asi no!" >Fortnite</h3>
                      <h6 class="card-subtitle text-muted">Epic games</h6>
                      
                      <p>Disfruta del mejor battle royal con mejor rendimiento del mercado.</p>
@@ -128,7 +166,7 @@
                     <img  class="colozo img-fluid card-img-top" src="./imagenes/valor.jfif" alt="">             
                     
                     <div class="card-body">
-                        <h3 class="card-title">Valorant</h3>
+                        <h3 class="card-title" >Valorant</h3>
                         <h6 class="card-subtitle text-muted">Riot Games</h6>
                         
                         <p class="card-text">Disfruta del mas famoso juego en primera persona.</p>
@@ -191,18 +229,47 @@
                         <h6 class="card-subtitle text-muted">CD Projekt RED</h6>
                         
                         <p class="card-text">Disfruta del juego con mejores graficos y con Ray Tracing de toda la historia.</p>
+
+                        
                     </div>
                     <div>
-                        <button class="btn btn-primary btn-reserva"> <i class="bi bi-bag-plus button-pay"></i>Comprar</button>
+                        <button class="btn btn-primary btn-reserva" data-bs-toggle="popover" data-content="reservar los mejores"> <i class="bi bi-bag-plus button-pay"></i>Comprar</button>
                     </div>
 
                 </div>
-                
-
-
-              
+                            
 
             </div>
+            <button class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#contacto">Suscrubete a nuestro boletin informativo</button>
+
+            <div class="modal fade" id="contacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModal">Contacto con playgames</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label" >Tu email:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label"> Mensaje</label>
+                                <textarea  class="form-control" name="" id="recipient-name" cols="30" rows="10"></textarea>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
         </div> 
         
@@ -242,12 +309,23 @@
        
 
         
-            <!-- Optional JavaScript; choose one of the two! -->
+ <!-- Optional JavaScript; choose one of the two! -->
 
-            <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-            <script src="node_modules/jquery/dist/jquery.min.js"></script>
-            <script src="node_modules/popper.js/dist/popper.min.js"></script>
-            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+ <script src="node_modules/jquery/dist/jquery.min.js"></script>
+ <script src="node_modules/popper.js/dist/popper.min.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+ <script>
+     $(function(){
+         $("[data-toggle='tooltip']").tooltip();
+         $("[data-toggle='popover']").popover();
+         $('.carousel').carousel({
+             interval:1000
+         });
+     });
+ </script>
+
 
  
     
