@@ -1,18 +1,28 @@
+$yellow: #fffa19;
+$red: #f16d15;
+$green: #12db66;
+$blue: #3414c4;
+
+@mixin margenes($top, $botton) {
+    margin-top: $top;
+    margin-bottom: $botton;
+    
+}
+
 .jumbotron{
-    background-color: blue;
+    background-color:$blue;
     color: white;
     height: 60px;
     text-align: center;
-    margin-top: 55px;
+    @include margenes(55px, 0px )
 
     
 }
 
 footer{
     padding: 20px;
-    background-color: blue;
-    margin-bottom: 0px;
-    margin-top: 10px;
+    background-color:$blue;
+    @include margenes(10px, 0px );
     color: white;
     
 }

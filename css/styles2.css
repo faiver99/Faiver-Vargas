@@ -1,5 +1,5 @@
 .jumbotron{
-    background-color: blue;
+    background-color:#8c2bdb;
     color: white;
     height: 60px;
     text-align: center;
@@ -10,7 +10,7 @@
 
 footer{
     padding: 20px;
-    background-color: blue;
+    background-color:#8c2bdb;
     margin-bottom: 0px;
     margin-top: 10px;
     color: white;
@@ -82,4 +82,3 @@ footer{
     height: auto;
     
 }
-
