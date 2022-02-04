@@ -57,4 +57,13 @@ footer {
   font-size: 20px; }
 
 .carousel-item {
-  height: auto; }
+  height: auto; 
+}
+
+.container-creator{
+  
+}
+.creator{
+  color: white;
+  align-items: end;
+}
